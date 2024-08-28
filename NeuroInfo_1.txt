@@ -1,0 +1,8 @@
+t = []
+	for i = 0:200
+	t(end + 1) = round((rand - 0.5) * 100)
+	end
+dt = arrayfun(@(x) x.^2 - 3 * x, t)
+test = [25 -25 51]
+dtest = arrayfun(@(x) x.^2 - 3 * x, test)
+nntool
